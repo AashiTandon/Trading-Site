@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5%;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    border-radius: 10%;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 8px;
+    width: 300px;
+    max-width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+main {
+    flex: 2;
+}
+
+.bar-graph {
+    height: fit-content;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.myBtn {
+    height: 5vh;
+    width: 8.5vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 25px;
+    border: none;
+}
+
+.myBtn:hover , .myBtn1:hover{
+    background-color: #25BE98;
+}
+
+.myBtn.active, .myBtn1.active {
+    background: #25BE98;
+    color: white;
+    font-weight: bold;
+}
+
+.myBtn1 {
+    height: 5vh;
+    width: 8.5vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 25px;
+    border: none;
+    margin: 1rem;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+table,th, tr, td {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+td:nth-child(2) {
+    white-space: nowrap;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.table-container {
+    display: flex;
+    gap: 2%;
+}
+
+.mutual-funds {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    height: 60vh;
+    width: 100%;
+    padding:2%;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+}
+
+.contact_us{
+
+    color: black;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links-container h2{
+    margin: 1rem;
+}
+
+.links-container ul {
+    margin: 1rem;
+}
+
+.links-container li {
+    padding: 3%;
+}
+
+.links-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.links-container a:hover {
+    color: #25BE98;
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .search-bar {
+        width: 250px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        background: white;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .search-bar {
+        width: 80%;
+    }
+
+    .login-btn {
+        width: 100%;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bar-graph{
+        height: fit-content;
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    footer {
+        width:100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+
+    .links-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .login-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    table, tr, td {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .bar-graph{
+        height: fit-content;
+        width: 100%;
+    }
+    
+    footer {
+        width:100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+
+    .links-container {
+        flex-direction: column;
+    }
+}

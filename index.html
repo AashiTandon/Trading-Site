@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading-Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html">
+                <img src="./images/logo.jpg" class="logo-img" alt="Trading Site Logo">
+            </a>
+            <h1 class="name">TradeX</h1>
+
+            <div class="navigation" id="nav-menu">
+                <input type="text" placeholder="Search Stocks" class="search-bar">
+                <button type="submit" class="login-btn">Login/Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <main>
+            <h1>CullinaryDelights</h1>
+            <div class="line-chart">
+                <canvas id="myChart" width="400" height="200"></canvas>
+            </div>    
+            <button class="myBtn" data-timeframe="1D">1 Day</button>
+            <button class="myBtn" data-timeframe="1W">1 Week</button>
+            <button class="myBtn" data-timeframe="1M">1 Month</button>
+
+            <br>
+            <br>
+
+            <div class="table-container">
+                <table>
+                    <caption>Fundamentals</caption>
+                    <tr>
+                        <td>Market Cap</td>
+                        <td>Rs.13,69,717</td>
+                    </tr>
+                    <tr>
+                        <td>P/E Ratio(TTM)</td>
+                        <td>28.09</td>
+                    </tr>
+                    <tr>
+                        <td>P/B Ratio</td>
+                        <td>13.53</td>
+                    </tr>
+                    <tr>
+                        <td>Industry P/E</td>
+                        <td>30.19</td>
+                    </tr>
+                    <tr>
+                        <td>Debt of Equity</td>
+                        <td>0.09</td>
+                    </tr>
+                </table>
+                <table>
+                    <caption>Fundamentals</caption>
+                    <tr>
+                        <td>ROE</td>
+                        <td>46.74%</td>
+                    </tr>
+                    <tr>
+                        <td>EPS(TTM)</td>
+                        <td>134.78</td>
+                    </tr>
+                    <tr>
+                        <td>Dividend Yield</td>
+                        <td>1.93%</td>
+                    </tr>
+                    <tr>
+                        <td>Book Value</td>
+                        <td>278.87</td>
+                    </tr>
+                    <tr>
+                        <td>Face Value</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mutual-funds">
+                <table>
+                    <caption>Top Mutual Funds Invested</caption>
+
+                    <tr>
+                        <th>Fund Name</th>
+                        <th>AUM(%)</th>
+                    </tr>
+
+                    <tr>
+                        <td>Tata Retirement Savings Fund Progressive Plan Direct Growth</td>
+                        <td>5.05%</td>
+                    </tr>
+                    <tr>
+                        <td>PGIM India Flexi Cap Fund Direct Growth</td>
+                        <td>4.80%</td>
+                    </tr>
+                    <tr>
+                        <td>Invesco India Largecap Fund Direct Growth</td>
+                        <td>4.39%</td>
+                    </tr>
+                    <tr>
+                        <td>Tata Retirement Savings Fund Moderate Plan Direct Growth</td>
+                        <td>4.22%</td>
+                    </tr>
+                </table>
+            </div>
+            <h1>Finances</h1>
+            <div class="bar-graph">
+                <button class="myBtn1" data-details="Revenue">Revenue</button>
+                <button class="myBtn1" data-details="Profit">Profit</button>
+                <button class="myBtn1" data-details="Net Worth">Net Worth</button>
+                <canvas id="myGraph" height="200" width="400"></canvas>
+            </div>
+        </main>
+        <aside>
+            <table>
+                <caption>Top Gainers</caption>
+                <tr>
+                    <td>JSW Energy</td>
+                    <td style="color: #25BE98;">Rs.496.60<br>+28.05(5.99%)</td>
+                </tr>
+                <tr>
+                    <td>Hindalco</td>
+                    <td style="color: #25BE98;">Rs.653.55<br>+14.75(2.31%)</td>
+                </tr>
+                <tr>
+                    <td>Varun Beverages</td>
+                    <td style="color: #25BE98;">Rs.477.65<br>+9.25(1.97%)</td>
+                </tr>
+                <tr>
+                    <td>Tata Steel</td>
+                    <td style="color: #25BE98;">Rs.140.76<br>+2.72(1.97%)</td>
+                </tr>
+                <tr>
+                    <td>Macrotech Devs</td>
+                    <td style="color: #25BE98;">Rs.1,215.55<br>+23.05(1.93%)</td>
+                </tr>
+            </table>
+
+            <table>
+                <caption>Top Losers</caption>
+                <tr>
+                    <td>Mahindra & Mahindra</td>
+                    <td style="color: #FF0000;">Rs.2,669.35<br>-170.10(5.99%)</td>
+                </tr>
+                <tr>
+                    <td>TVS Motor Company</td>
+                    <td style="color: #FF0000;">Rs.2,324.95<br>-94.30(3.90%)</td>
+                </tr>
+                <tr>
+                    <td>Divi's Company</td>
+                    <td style="color: #FF0000;">Rs.5,757.05<br>-221.25(3.70%)</td>
+                </tr>
+                <tr>
+                    <td>United Spirits</td>
+                    <td style="color: #FF0000;">Rs.1,306.50<br>-38.45(2.86%)</td>
+                </tr>
+                <tr>
+                    <td>BPCL</td>
+                    <td style="color: #FF0000;">Rs.251.30<br>-7.30(2.82%)</td>
+                </tr>
+            </table>
+        </aside>
+    </div>
+    
+
+    <footer>
+        <div class="footer-logo-container">
+            <a href="index.html">
+                <img src="./images/logo.jpg" class="logo-img" alt="Trading Site Logo">
+            </a>
+            <h1>TradeX</h1>
+            <address>Vaishnavi Tech Park, South Tower, 3rd<br>Floor<br>Sarjapur Main Road, Bellandur<br>Bengaluru – 560103<br>Karnataka</address>
+            <a href="contact.html" class="contact_us">Contact us</a>
+        </div>
+        <div class="links-container">
+            <div class="products">
+                <h2>Products</h2>
+                <ul type="none"> 
+                    <li><a href='stocks.html'>Stocks</a></li>
+                    <li><a href='Features_and_options.html'>Features and Options</a></li>
+                    <li><a href='MTF.html'>MTF</a></li>
+                    <li><a href='IPO.html'>IPO</a></li>
+                    <li><a href='mutual_funds.html'>Mutual Funds</a></li>
+                    <li><a href='NFO.html'>NFO</a></li>
+                    <li><a href='ETF.html'>ETF</a></li>
+                    <li><a href='credit.html'>Credit</a></li>
+                    <li><a href='bill_payments.html'>Bill Payments</a></li>
+                </ul>
+            </div>
+            <div class="TradeX">
+                <h2>TradeX</h2>
+                <ul type="none"> 
+                    <li><a href='about_us.html'>About Us</a></li>
+                    <li><a href='pricing.html'>Pricing</a></li>
+                    <li><a href='blog.html'>Blog</a></li>
+                    <li><a href='media_and_press.html'>Media & Press</a></li>
+                    <li><a href='careers.html'>Careers</a></li>
+                    <li><a href='help_and_support.html'>Help and Support</a></li>
+                    <li><a href='Trust_and_safety.html'>Trust and Safety</a></li>
+                </ul>
+            </div>
+            <div class="TradeX">
+                <h2>Quick Links</h2>
+                <ul type="none"> 
+                    <li><a href='amc.html'>AMC Mutual Funds</a></li>
+                    <li><a href='calculators.html'>Calculators</a></li>
+                    <li><a href='glossary.html'>Glossary</a></li>
+                    <li><a href='demat.html'>Open Demat Account</a></li>
+                    <li><a href='digest.html'>TradeX Digest</a></li>
+                    <li><a href='sitemap.html'>Sitemap</a></li> 
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
