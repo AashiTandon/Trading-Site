@@ -210,6 +210,11 @@ footer {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+
+    .navbar{
+        width: 100%;
+    }
+
     .navigation {
         display: flex;
         flex-direction: column;
@@ -225,6 +230,10 @@ footer {
 
     .navigation.active {
         display: flex;
+    }
+
+    .stockName {
+        margin-top: 10rem;
     }
 
     .search-bar {
@@ -266,13 +275,21 @@ footer {
     }
 
     .line-chart {
-        margin-top: 10rem;
+        margin-top: 1rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 50px) and (max-width: 480px) {
     .name {
         font-size: 1.2rem;
+    }
+
+    .stockName {
+        margin-top: 10rem;
+    }
+
+    .navbar{
+        width: 100% !important;
     }
 
     .navigation {
@@ -293,7 +310,7 @@ footer {
     }
 
     .line-chart {
-        margin-top: 8rem;
+        margin-top: 1rem;
     }
 
     .login-btn {
