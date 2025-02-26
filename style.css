@@ -246,9 +246,14 @@ footer {
         flex-direction: column;
     }
 
-
     .links-container {
         flex-direction: column;
+    }
+
+    .myBtn ,.myBtn1 {
+        font-size: 12px;
+        padding: 6px 12px;
+        min-width: 100px;
     }
 }
 
@@ -285,5 +290,11 @@ footer {
 
     .links-container {
         flex-direction: column;
+    }
+
+    .myBtn ,.myBtn1 {
+        font-size: 12px;
+        padding: 6px 12px;
+        min-width: 100px;
     }
 }
